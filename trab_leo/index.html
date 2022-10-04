@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcionarios</title>
     <link rel="stylesheet" href="test.css">
-    <link rel="stylesheet" href="fundo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
@@ -14,7 +13,7 @@
 
 <body>
     <h1>Hogwarts</h1>
-    <h2>Wizard Scholl</h2>
+    <h2>Wizard School</h2>
 
     <div class="container">
         <div class="box">
@@ -38,14 +37,26 @@
                 <input type="text" name="SALARIO" id="boxx">
         </div>
 
-        <button id="inserir">Inserir</button>
+        <button id="inserir" onClick="inserir()" type="button" class="btn btn-primary">Inserir</button>
     </div>
 
-    <div class="container2">
-        <div class="stars"></div>
-        <div class="stars2"></div>
-    </div>
-
+    <section id="consulta">
+        <div class="container3">
+            <h3>Consulta</h3>
+            <table class="table">
+                <thead>
+                    <tr id="tabela1"> 
+                        <th> ID </th> <th> FUNCAO </th> 
+                        <th> NOME </th> <th> SALARIO </th>
+                        <th> Remover </th> <th> Atualizar </th> 
+                    </tr>    
+                </thead>
+                <tbody>
+                    <!-- os dados dos funcionarios virão aqui -->
+                </tbody>
+            </table>
+        </div>
+    </section>
 
 </body>
 </html>

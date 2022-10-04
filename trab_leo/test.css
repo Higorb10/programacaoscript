@@ -1,28 +1,30 @@
 body {
-   background-image: url("./castelo.png");
+    background-image: url("./Harry.png");
+    background-color: black;
    background-repeat: no-repeat;
-   background-size: cover;
-    align-items: center;
+   background-size: auto;
+   background-position: center;
     margin: 0px;
 }
 
 h1 {
     margin-top: 50px;
-    color: goldenrod;
+    color: silver;
     text-align: center;
     font-family: 'Cinzel Decorative', cursive;
     font-size: 75px;
 }
 
 h2 {
-    color: goldenrod;
+    color: silver;
     text-align: center;
     font-family: 'Cinzel Decorative', cursive;
     font-size: 30px;
 }
 
+/*formatação do botão*/
 button#inserir {
-    background-color: goldenrod;
+    background-color: silver;
     align-items: center;
     border-radius: 20ch;
     width: 200px;
@@ -30,7 +32,7 @@ button#inserir {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 20px;
 }
-
+/*Formatação do conteiner de inserção de funcionarios*/
 .container {
     width: 100vw;
     height: 100vh;
@@ -41,101 +43,53 @@ button#inserir {
     margin-top: -10pc;
     font-size: 20px;
     }
-
+/*box de cada label*/
 .box {
     width: 200px;
     height: 80px;        
     font-size: 20px;
     }
 
-.boxx {
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-}
 label {
-    color: goldenrod;
+    color: silver;
     font-family: 'Cinzel Decorative', cursive;
     text-align: center;
 }
+/*background de estrelas*/
 
-.container2 {
-    width: 350px;
-    height: 150px;
-    background-image: url("trab-leo/castelo.png");
+/*table onde printa as informações dos funcionarios*/
+.table {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20ch;
+    margin: auto;
+    color: silver;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+    text-align: center;
 }
-.stars {
-    position: relative;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    box-shadow: 50px 30px white,
-    100px 80px white,
-    80px 120px white,
-    300px 20px white,
-    250px 130px white,
-    200px 50px white,
-    150px 100px white,
-    320px 100px white;
-    animation: anim-stars 10s linear infinite;
-}
-.stars::after{
-    content: " ";
-    position: absolute;
-    top: 150px;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    box-shadow: 50px 30px white,
-      100px 80px white,
-      80px 120px white,
-      300px 20px white,
-      250px 130px white,
-      200px 50px white,
-      150px 100px white,
-      320px 100px white;
-  }
-  .stars2{
-    position: relative;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    box-shadow: 15px 15px white,
-      125px 35px white,
-      50px 80px white,
-      10px 120px white,
-      275px 90px white,
-      230px 10px white,
-      120px 130px white,
-      300px 130px white,
-      220px 115px white;
-    animation: anim-stars 20s linear infinite;
-  }
-  
-  .stars2::after{
-    content: " ";
-    position: absolute;
-    top: 150px;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    box-shadow: 15px 15px white,
-      125px 35px white,
-      50px 80px white,
-      10px 120px white,
-      275px 90px white,
-      230px 10px white,
-      120px 130px white,
-      300px 130px white,
-      220px 115px white;
-  }
 
-@keyframes anim-stars {
-    from {
-        transform: translateY(0px);
-    }
-    to {
-        transform: translateY(-150px);
-    }
+#tabela1 {
+    
+    background-position: center;
+    background-size: 50%;
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+}
+
+h3 {
+    color: silver;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 30px;
+}
+
+th {
+    background-image: url(nebulosa.png);
+    color: silver;
+    text-align: auto;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
