@@ -55,8 +55,14 @@ label {
     font-family: 'Cinzel Decorative', cursive;
     text-align: center;
 }
-/*background de estrelas*/
-
+/*Rodapé*/
+#rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 15px;
+}
 /*table onde printa as informações dos funcionarios*/
 .table {
     margin-top: 50px;
