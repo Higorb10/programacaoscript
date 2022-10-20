@@ -1,0 +1,101 @@
+body {
+    background-image: url("./Harry.png");
+    background-color: black;
+   background-repeat: no-repeat;
+   background-size: auto;
+   background-position: center;
+    margin: 0px;
+}
+
+h1 {
+    margin-top: 50px;
+    color: silver;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 75px;
+}
+
+h2 {
+    color: silver;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 30px;
+}
+
+/*formatação do botão*/
+button#inserir {
+    background-color: silver;
+    align-items: center;
+    border-radius: 20ch;
+    width: 200px;
+    height: 70px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+}
+/*Formatação do conteiner de inserção de funcionarios*/
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10pc;
+    font-size: 20px;
+    }
+/*box de cada label*/
+.box {
+    width: 200px;
+    height: 80px;        
+    font-size: 20px;
+    }
+
+label {
+    color: silver;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+/*Rodapé*/
+#rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 15px;
+}
+/*table onde printa as informações dos funcionarios*/
+.table {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20ch;
+    margin: auto;
+    color: silver;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+#tabela1 {
+    
+    background-position: center;
+    background-size: 50%;
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+}
+
+h3 {
+    color: silver;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 30px;
+}
+
+th {
+    background-image: url(nebulosa.png);
+    color: silver;
+    text-align: auto;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
