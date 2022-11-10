@@ -23,7 +23,7 @@ async function cadastrar(){
     // criar o dado para enviar
     
     // chamar ou consumir a API utilizando fetch
-    await fetch('http://localhost:8080/pokemon', {
+    await fetch('http://localhost:8080/basquete', {
         method: metodo,
         body: JSON.stringify(dado),
         headers: {"Content-Type": "application/json; charset=UTF-8"}
@@ -38,8 +38,8 @@ async function cadastrar(){
 }
 
 async function consultar(){
-    // consome a API e recupera os pokemons
-    let dados = await fetch('http://localhost:8080/pokemon')
+    // consome a API e recupera os times
+    let dados = await fetch('http://localhost:8080/basquete')
     .then( response => {
         return response.json() // atribui os dados em json para dados
     })  
@@ -56,18 +56,18 @@ async function consultar(){
     document.getElementById("conteudoTabela").innerHTML = resposta
 }
 
-// remove um pokemon do banco de dados
+// remove um time do banco de dados
 // quem chamar a função remove pode fazer outra ação antes de
 // receber resposta
 async function remove(id){
-    let confirma = confirm(`Confirma exclusão do pokemon? `)
+    let confirma = confirm(`Confirma exclusão do time? `)
     if (confirma){ // confirma é true
         // chama a api -> é síncrona (aguardamos o retorna do servidor)
-        await fetch(`http://localhost:8080/pokemon/${id}`, {
+        await fetch(`http://localhost:8080/basquete/${id}`, {
             method:'DELETE'
         })
         .then (response => { // quando o servidor retornou
-            alert(`Pokemon foi removido com sucesso`)
+            alert(`O time foi removido com sucesso`)
             consultar()
         })
         .catch( error => { // houve erro na comunicação com servidor
@@ -78,7 +78,7 @@ async function remove(id){
 }
 
 function atualiza(id, nome, tipo, poder, nota){
-    // insere no formulário os dados do pokemon que será atualizado
+    // insere no formulário os dados do Time que será atualizado
     document.getElementById("id").value = id
     document.getElementById("nome").value = nome
     document.getElementById("tipo").value = tipo
